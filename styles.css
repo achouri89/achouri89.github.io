@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
@@ -9,7 +10,7 @@ body {
     height: 100vh;
 }
 
-.login-container {
+.container {
     background-color: #ffffff;
     width: 360px;
     border-radius: 8px;
@@ -18,18 +19,19 @@ body {
     text-align: center;
 }
 
-.login-header h1 {
+h1 {
     color: #2a6f91;
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
-.login-header p {
+p {
     color: #555;
     font-size: 14px;
     margin-bottom: 20px;
 }
 
+/* Input Fields */
 .input-field {
     width: 100%;
     padding: 12px;
@@ -44,19 +46,48 @@ body {
     border-color: #2a6f91;
 }
 
-.login-btn {
+/* Buttons */
+button {
     width: 100%;
     padding: 12px;
-    background-color: #2a6f91;
-    color: white;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
-.login-btn:hover {
+button.login-btn {
+    background-color: #2a6f91;
+    color: white;
+}
+
+button.login-btn:hover {
     background-color: #234f68;
+}
+
+button.create-btn {
+    background-color: #2a6f91;
+    color: white;
+}
+
+button.create-btn:hover {
+    background-color: #234f68;
+}
+
+/* Links */
+.login-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #2a6f91;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
 }
 
 .forgot-password {
@@ -70,6 +101,7 @@ body {
     text-decoration: none;
 }
 
+/* Divider */
 .divider {
     margin: 20px 0;
     text-align: center;
@@ -82,18 +114,47 @@ body {
     padding: 0 10px;
 }
 
-.create-account-btn {
-    width: 100%;
-    padding: 12px;
-    background-color: #42b72a;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 15px;
+/* Forms - General */
+form {
+    margin-bottom: 20px;
 }
 
-.create-account-btn:hover {
-    background-color: #36a420;
+/* Login Page Specific */
+.login-container {
+    width: 360px;
+}
+
+.create-account-container {
+    width: 360px;
+}
+
+/* Create Account Page Specific */
+.create-account-container {
+    width: 360px;
+}
+
+.create-account-container .login-link {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Small Adjustments */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+    
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
