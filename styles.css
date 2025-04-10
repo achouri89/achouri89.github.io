@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
-    font-family: 'Georgia', serif;  /* A more literary font for book feel */
-    background-color: #f0f8ff;  /* Light blue background */
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,23 +11,18 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #ffffff;
     width: 360px;
     border-radius: 8px;
     padding: 40px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Soft shadow for a book-like feel */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-family: 'Georgia', serif;
-    border: 1px solid #ddd;  /* Subtle border */
 }
 
-/* Header Styling */
 h1 {
-    color: #2a4d6d;  /* A deep, book-like color */
-    font-size: 36px;
-    font-weight: bold;
+    color: #2a6f91;
+    font-size: 32px;
     margin-bottom: 10px;
-    font-family: 'Georgia', serif;
 }
 
 p {
@@ -44,15 +39,11 @@ p {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
-    font-family: 'Georgia', serif;
-    background-color: #fafafa;
-    color: #333;
 }
 
 .input-field:focus {
     outline: none;
-    border-color: #2a4d6d;  /* Focus color matching the header */
-    background-color: #fff;
+    border-color: #2a6f91;
 }
 
 /* Buttons */
@@ -62,46 +53,55 @@ button {
     border: none;
     border-radius: 4px;
     font-size: 16px;
-    font-family: 'Georgia', serif;
     cursor: pointer;
     margin-top: 20px;
 }
 
-/* Login Button */
 button.login-btn {
-    background-color: #2a4d6d;  /* Deep blue to match the book theme */
+    background-color: #2a6f91;
     color: white;
 }
 
 button.login-btn:hover {
-    background-color: #1d3650;  /* Darker shade for hover effect */
+    background-color: #234f68;
 }
 
-/* Create Account Button */
-button.create-account-btn {
-    background-color: #8b5c3f;  /* Earthy brown, evoking a classic book feel */
+button.create-btn {
+    background-color: #2a6f91;
     color: white;
 }
 
-button.create-account-btn:hover {
-    background-color: #704a2d;  /* Darker brown for hover */
+button.create-btn:hover {
+    background-color: #234f68;
 }
 
-/* Forgot Password & Other Links */
-.forgot-password a,
-.login-link a {
-    color: #2a4d6d;  /* Matches the header color */
-    text-decoration: none;
+/* Links */
+.login-link {
+    margin-top: 20px;
     font-size: 14px;
-    font-family: 'Georgia', serif;
 }
 
-.forgot-password a:hover,
+.login-link a {
+    color: #2a6f91;
+    text-decoration: none;
+}
+
 .login-link a:hover {
     text-decoration: underline;
 }
 
-/* Divider Between Sections */
+.forgot-password {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.forgot-password a {
+    color: #2a6f91;
+    text-decoration: none;
+}
+
+/* Divider */
 .divider {
     margin: 20px 0;
     text-align: center;
@@ -114,26 +114,45 @@ button.create-account-btn:hover {
     padding: 0 10px;
 }
 
-/* Links to Other Pages */
-a {
-    text-decoration: none;
+/* Forms - General */
+form {
+    margin-bottom: 20px;
 }
 
-/* Mobile Responsiveness */
+/* Login Page Specific */
+.login-container {
+    width: 360px;
+}
+
+.create-account-container {
+    width: 360px;
+}
+
+/* Create Account Page Specific */
+.create-account-container {
+    width: 360px;
+}
+
+.create-account-container .login-link {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Small Adjustments */
 @media (max-width: 480px) {
     .container {
         width: 90%;
         padding: 20px;
     }
-
+    
     h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
-
+    
     p {
         font-size: 12px;
     }
-
+    
     button {
         font-size: 14px;
         padding: 10px;
